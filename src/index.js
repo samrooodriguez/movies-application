@@ -1,10 +1,4 @@
 /**
- * es6 modules and imports
- */
-import sayHello from './hello';
-sayHello('World');
-
-/**
  * require style imports
  */
 const {getMovies} = require('./api.js');
@@ -20,3 +14,5 @@ getMovies().then((movies) => {
 });
 
 console.log("This is a test");
+
+console.log("Wait is it still working what is going on");
