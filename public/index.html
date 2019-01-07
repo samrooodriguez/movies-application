@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>My Application</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-5 h1">Not Netflix</span><img src="../images/noun_Dog_193397.png">
+        </nav>
+    </header>
+    <!--<main class="container">-->
+        <!--<form>-->
+            <!--<fieldset class="form-group">-->
+                <!--<label for="searchTerm"></label>-->
+                <!--<input type="text" class="form-control" id="searchTerm" placeholder="Search For Your Movie Here...">-->
+            <!--</fieldset>-->
+            <!--<button type="submit" class="btn btn-primary">Search!</button>-->
+        <!--</form>-->
+    <!--</main>-->
+    <hr>
 
-    <div class="container">
-        <h1>Hello There!</h1>
-        <p>To get started, edit <code>src/index.js</code>.</p>
-    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Movie title</th>
+            <th scope="col">Movie Rating</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Up</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <th scope="row">2</th>
+            <td>Home Alone</td>
+            <td>10</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <form>
+        <label for="movie-title">Name of movie</label>
+        <input type="text" id="movie-title" placeholder="Movie Title">
+        <label for="movie-rating">Rating of movie</label>
+        <input type="text" id="movie-rating" placeholder="Movie Rating">
+        <button type="submit" id="add-movie" class="btn btn-primary">Submit</button>
+    </form>
+
+
+
     <script type="text/javascript" src="main.js"></script>
 </body>
 </html>
